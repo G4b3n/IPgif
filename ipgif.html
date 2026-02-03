@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ipgifstyle.css">
+    <title>IPv4 címek bemutatása</title>
+</head>
+<body>
+    <div class="header">
+        <h1>IPv4 címek osztályai</h1>
+    </div>
+    <div class="parent-container">
+        <div class="card-container1">
+            <div class="rotating-card">
+                <div class="card-front">
+                    <h2>A osztály</h2>
+                </div>
+                <div class="card-back">
+                    <p class="justify-text">
+                        Ebben az osztályban az első 8 bit a hálózatot mutatja, a többi bit kiosztható cím.
+                        Összesen 2^24-2=16777214 gép csatlakoztatható egy A osztályú hálózathoz.
+                    </p>
+                    <img class="card-back-pic" src="img/AClass.png" alt="A osztályú IPcím">
+                </div>
+            </div>
+        </div>
+        <div class="card-container2">
+            <div class="rotating-card">
+                <div class="card-front">
+                    <h2>B osztály</h2>
+                </div>
+                <div class="card-back">
+                    <p class="justify-text">
+                        Ebben az osztályban a bitek fele a hálózatot, a másik fele pedig a gépet azonosítja.
+                        Összesen 2^16-2=65534 gép csatlakoztatható egy B osztályú hálózathoz.
+                    </p>
+                    <img class="card-back-pic" src="img/BClass.png" alt="B osztályú IPcím">
+                </div>
+            </div>
+        </div>
+        <div class="card-container3">
+            <div class="rotating-card">
+                <div class="card-front">
+                    <h2>C osztály</h2>
+                </div>
+                <div class="card-back">
+                    <p class="justify-text">
+                        Ebben az osztályban az első 3 oktet a hálózatot mutatja a 4. oktet pedig a gépet azonosítja.
+                        Összesen 2^8-2=254 gép csatlakoztatható egy C osztályú hálózathoz.
+                    </p>
+                    <img class="card-back-pic" src="img/CClass.png" alt="C osztályú IPcím">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="explanation">
+        <p class="explanation-text">
+            Az IPv4 címek 4 oktetből állnak, amelyeket pontok választanak el egymástól.
+            Minden oktet egy 0 és 255 közötti számot tartalmaz. Ez a szám attól függ, hogy a bitek értéke mennyi.
+        </p>
+        <p class="explanation-text">
+            Fontos tudni, hogy bizonyos IP címek fenntartottak speciális célokra, például a hálózati cím, ami az első illetve a broadcast cím, ami az utolsó. Ezeket a címeket nem lehet eszközökhöz rendelni.
+        </p>
+        <p class="explanation-text">
+            Az IP címek feloszthatók kisebb hálózatokra is, ezt subnettingnek nevezzük. Ilyenkor elveszünk egy bitet a gépeknek kiosztható címekből és odaadjuk a hálózatoknak.
+        </p>
+    </div>
+</body>
+</html>
